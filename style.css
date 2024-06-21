@@ -1,0 +1,31 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #131416;
+    height: 100vh;
+}
+
+button{
+    border: 0;
+    background: transparent;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    padding: 20px 50px;
+    border-radius: 25% 10%;
+    cursor: pointer;
+}
+
+button::after{
+    content: "";
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(225deg,#b1e000 0%, #09790e 50%, #00ffe1 100%);
+    position: absolute;
+    top: -50px;
+    left: -100px;
+    z-index: -1;
+    font-size: 1.5em;
+    box-shadow: 0px;
+}
